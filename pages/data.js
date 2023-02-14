@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { getSortedPostsData } from '../lib/post'
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
   const allPostsData = getSortedPostsData()
   return {
     props: {
@@ -12,6 +12,7 @@ export async function getStaticProps() {
 }
 
 export default function data({ allPostsData }) {
+  console.log(allPostsData)
   return (
     <div className='container'>
       <div className='mb-3'>

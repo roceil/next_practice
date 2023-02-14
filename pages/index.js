@@ -39,6 +39,20 @@ export default function Home() {
               <p>我討厭Typescript</p>
             </Link>
           </div>
+
+          <div className='link'>
+            <Link href='./posts/ssg-ssr'>
+              <h3>ssg-ssr &rarr;</h3>
+              <p>我討厭Typescript</p>
+            </Link>
+          </div>
+
+          <div className='link'>
+            <Link href='./posts/preRendering'>
+              <h3>pre-Rendering &rarr;</h3>
+              <p>我討厭Typescript</p>
+            </Link>
+          </div>
         </div>
       </main>
     </div>
