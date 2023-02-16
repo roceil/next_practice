@@ -18,7 +18,7 @@ export default function Home() {
           Get started by editing <code>pages/index.js</code>
         </p>
 
-        <div className='flex space-x-3 mt-5'>
+        <div className='flex flex-wrap space-x-3 space-y-3 mt-5'>
           <div className='link'>
             <Link href='./about'>
               <h3>關於我 &rarr;</h3>
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
 
           <div className='link'>
-            <Link href='./todo/picPractice'>
+            <Link href='./picPractice'>
               <h3>picPractice &rarr;</h3>
               <p>我討厭Typescript</p>
             </Link>
@@ -50,6 +50,20 @@ export default function Home() {
           <div className='link'>
             <Link href='./posts/preRendering'>
               <h3>pre-Rendering &rarr;</h3>
+              <p>我討厭Typescript</p>
+            </Link>
+          </div>
+
+          <div className='link'>
+            <Link href='./1231231232'>
+              <h3>前往404 &rarr;</h3>
+              <p>我討厭Typescript</p>
+            </Link>
+          </div>
+
+          <div className='link'>
+            <Link href='./user'>
+              <h3>前往UserData &rarr;</h3>
               <p>我討厭Typescript</p>
             </Link>
           </div>
