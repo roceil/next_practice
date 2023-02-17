@@ -14,6 +14,8 @@ export async function getStaticProps() {
 export default function UserData({ data }) {
   return (
     <div className='container flex flex-col'>
+        <Link className='link max-w-[74px] mb-3' href={"/"}>回首頁</Link>
+
       {data.map((userData) => {
         return (
           <Link href={`/user/${userData.name.toString()}`} className='mb-3 link hover:bg-black hover:text-white'>
