@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className=''>
       <Head>
-        <title>Create Next App</title>
+        <title>練習用鬼咚咚</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 

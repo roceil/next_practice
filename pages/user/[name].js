@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 export const getStaticPaths = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -30,11 +31,15 @@ export default function UserDetail({ data }) {
       {data.map((userData) => {
         return (
           <div className='container'>
+            <Head>
+              <title>{userData.name}`s information</title>
+            </Head>
             <ul className=' flex flex-col space-y-4 text-3xl'>
               <li>Name：{userData.name}</li>
               <li>Email：{userData.email}</li>
               <li>Phone：{userData.phone}</li>
             </ul>
+
             <div className='link mt-4'>
               <Link href={'../user'}>回前頁</Link>
             </div>
